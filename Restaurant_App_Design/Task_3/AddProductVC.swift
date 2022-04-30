@@ -16,7 +16,7 @@ class AddProductVC: UIViewController, UICollectionViewDataSource, UICollectionVi
     var editImageIndex: Int = 0
     var editImageflag: Bool = false
 
-    var testImage = [UIImage(systemName: "bag"), UIImage(systemName: "bag"), UIImage(systemName: "bag")]
+//    var testImage = [UIImage(systemName: "bag"), UIImage(systemName: "bag"), UIImage(systemName: "bag")]
     var targetImagePlace: Int?
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -88,18 +88,7 @@ class AddProductVC: UIViewController, UICollectionViewDataSource, UICollectionVi
         picker.delegate = self
         present(picker, animated: true)
     }
-    
-//    private func editImage(){
-//        print("edit")
-//        let picker = UIImagePickerController()
-//        picker.sourceType = .photoLibrary
-//        picker.allowsEditing = true
-//        picker.delegate = self
-//
-//        present(picker, animated: true)
-//
-//    }
-//
+
 }
 
 extension AddProductVC: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
